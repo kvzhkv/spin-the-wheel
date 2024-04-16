@@ -10,6 +10,7 @@ export const Button = styled.button`
     margin: 0;
     padding: 0;
     cursor: pointer;
+    transition: color 0.1s;
 
     &:hover {
         color: #646cff;
