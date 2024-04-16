@@ -40,7 +40,7 @@ const SliceItem = styled.div<SliceItemProps>`
     width: 50%;
     padding: 0 3rem 0 1rem;
     overflow: hidden;
-    text-wrap: nowrap;
+    white-space: nowrap;
     text-overflow: ellipsis;
     transform: rotate(${({ $rad }) => $rad}rad);
     color: ${({ $picked }) => ($picked ? "#555555" : "inherit")};
