@@ -4,17 +4,26 @@ import { DataContext } from "../context/DataContextProvider";
 import Slice from "./Slice";
 
 const colorsCollection = [
-    "#000000",
-    "#053a8e",
-    "#658401",
-    "#055e84",
-    "#912b05",
-    "#1eaa77",
-    "#0e0a77",
-    "#0e8a8e",
-    "#0e2a1e",
-    "#2070a8",
-    "#91191b",
+    "#004445",
+    "#022C1E",
+    "#2C7873",
+    "#6F998F",
+    "#004D47",
+    "#128277",
+    "#002E38",
+    "#011D15",
+    "#1D5550",
+    "#4B7668",
+    "#00332D",
+    "#0B5652",
+    "#00474C",
+    "#255D58",
+    "#002F29",
+    "#0F433E",
+    "#255856",
+    "#4B6F68",
+    "#002623",
+    "#396C65",
 ];
 const Wheel: React.FC = () => {
     const { values, currentItem, viewedItems } = useContext(DataContext);
