@@ -10,7 +10,7 @@ const GlobalStyles = styled.createGlobalStyle`
         min-width: 320px;
         min-height: 100vh;
         color: rgba(255, 255, 255, 0.87);
-        background-color: #242424;
+        background-color: #52958b;
     }
     #root {
         display: flex;
