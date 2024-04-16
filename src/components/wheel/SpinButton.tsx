@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { DataContext } from "../context/DataContextProvider";
 import Icon from "../Icon";
+import { Button } from "../styled";
 
 interface Props {}
 
@@ -9,7 +10,7 @@ const SpinButton: React.FC<Props> = () => {
     const { dispatch, currentItem, viewedItems, values } =
         useContext(DataContext);
     return (
-        <Button
+        <Btn
             onClick={() => dispatch({ type: "pick" })}
             disabled={
                 currentItem !== null || viewedItems.length === values.length
@@ -22,11 +23,11 @@ const SpinButton: React.FC<Props> = () => {
                         : "spin"
                 }
             />
-        </Button>
+        </Btn>
     );
 };
 
-const Button = styled.button`
+const Btn = styled(Button)`
     position: relative;
     display: flex;
     align-items: center;
@@ -37,12 +38,7 @@ const Button = styled.button`
     width: 4rem;
     height: 4rem;
     font-size: 2rem;
-    font-weight: 500;
-    font-family: inherit;
     background-color: #1a1a1a;
-    color: inherit;
-    cursor: pointer;
-    transition: color 0.25s;
 
     &:before {
         position: absolute;
