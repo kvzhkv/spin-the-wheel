@@ -91,7 +91,7 @@ const WheelBlock = styled.div<WheelBlockProps>`
     background: ${({ $back }) => $back};
     transform: rotate(${({ $start }) => $start}turn);
     &.rotate-it {
-        animation: ${({ $start, $end }) => rotate($start, $end)} 5s
+        animation: ${({ $start, $end }) => rotate($start, $end)} 3s
             cubic-bezier(0.65, 0, 0.35, 1);
         animation-fill-mode: forwards;
     }

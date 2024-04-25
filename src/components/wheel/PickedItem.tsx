@@ -48,7 +48,7 @@ const PickedItemBlock = styled.div`
 
     opacity: 0;
     animation: ${fadeIn} 0.5s ease-in;
-    animation-delay: 5s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 `;
 
